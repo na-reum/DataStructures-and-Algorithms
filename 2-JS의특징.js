@@ -26,3 +26,7 @@ var obj1 = {'prop1':'test','prop2':function(){}};
 var obj2 = {'prop1':'test','prop2':function(){}};
 
 isEquivalent(obj1,obj2); // false를 반환
+
+var function1 = function(){console.log(2)};
+var function2 = function(){console.log(2)};
+console.log(function1 === function2) //false
