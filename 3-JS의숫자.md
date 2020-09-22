@@ -113,3 +113,19 @@ Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2 // true
 </pre>
 위 코드에서 두 수는 더 이상 커질 수 없기에 true이다. 하지만 위의 코드를 부동소수점과 같이 사용하면 제대로 작동하지 않으며 결과는 false이다. 
 
+<pre>
+Number.MAX_SAFE_INTEGER + 1.111 === Number.MAX_SAFE_INTEGER + 2.022 // false
+</pre>
+Number.MAX_SAFE_INTEGER 은 가능한 가장 큰 부동 소수점을 반환한다.
+
+Number.MAX_VALUE는 1.7976931348623157e+308이다.
+
+<pre>
+Number.MAX_VALUE + 1 === Number.MAX_VALUE + 2 // true
+</pre>
+
+Number.MAX_SAFE_INTEGER와는 달리 위의 코드는 배정밀도 부동소수점 표현을 사용하고 부동소수점에서도 잘 동작한다.
+
+<pre>
+Number.MAX_VALUE+ 1.111 === Number.MAX_VALUE + 2.022 // true
+</pre>
