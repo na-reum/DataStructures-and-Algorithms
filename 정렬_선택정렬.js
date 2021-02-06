@@ -2,6 +2,10 @@
 let a = [10,11,9,2,3,6,5,4];
 let 정렬된배열 = [];
 
+// function min(){
+
+// }
+
 for (let i = 0; i < 8; i++){
     정렬된배열.push(Math.min.apply(null,a));
 
@@ -10,4 +14,4 @@ for (let i = 0; i < 8; i++){
     console.log(정렬된배열)
 }
 
-while()
+// while(a)
