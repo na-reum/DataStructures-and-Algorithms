@@ -30,9 +30,11 @@ function solution(test){
     let answer=0;
     m=test.length;
     n=test[0].length;
+    // 멘토, 멘티 정하기
     for(let i=1; i<=n; i++){
         for(let j=1; j<=n; j++){
             let cnt=0;
+            // 확인하기
             for(let k=0; k<m; k++){
                 let pi=pj=0;
                 for(let s=0; s<n; s++){
