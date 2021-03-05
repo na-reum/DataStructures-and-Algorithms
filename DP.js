@@ -26,7 +26,7 @@ function fiboBest(n){
     return cache[n] = fiboBest(n-1) + fiboBest(n-2);
 }
 
-// 중복 부분 문제 
+// 중복 부분 문제 *
 
 // 동적 프로그래밍을 규칙
 // 중복 부분 문제
