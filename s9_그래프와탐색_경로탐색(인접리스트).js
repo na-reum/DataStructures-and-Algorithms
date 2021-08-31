@@ -7,6 +7,7 @@ function solution(n, arr){
         graph[a].push(b);
   
     }
+    console.log(graph)
     const DFS = (v) => {
         if(v===n){
             return answer++;
